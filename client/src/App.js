@@ -12,68 +12,49 @@ import { FormControl } from 'react-bootstrap';
 import { Card } from 'react-bootstrap';
 import { Form } from 'react-bootstrap';
 import { Figure } from 'react-bootstrap';
+import AlertDismissable from "./components/AlertDismissable";
+import Forms from "./components/Forms";
+function App() {
+  return (
+    <div className="App">
 
- function App (){return (
-  <div className="App">
-    <Container>
-      <Row>
-        <Figure>
-          <Figure.Image
-            width={171}
-            height={180}
-            alt="171x180"
-            src="holder.js/171x180"
-          />
-          <Figure.Caption>
-            Nulla vitae elit libero, a pharetra augue mollis interdum.
-  </Figure.Caption>
-        </Figure>
-        <Col sm={8}>
+      <Container>
+        <Row>
+          <Col sm={12}>
+          </Col>
 
-        </Col>
-        <Col sm={4}>sm=4</Col>
-      </Row>
-      <Row>
-        <Col sm={8}>sm=8</Col>
-        <Col sm={4}>sm=4</Col>
-      </Row>
-      <Row>
-        <Col sm={8}> <Form>
-          <Form.Group controlId="formBasicEmail">
-            <Form.Label>Email address</Form.Label>
-            <Form.Control type="email" placeholder="Enter email" />
-            <Form.Text className="text-muted">
-              We'll never share your email with anyone else.
-    </Form.Text>
-          </Form.Group>
+        </Row>
+        <br>
+        </br>
+        <br>
+        </br>
+        <Row>
+          <Col sm={2}></Col>
+          <Col sm={8}>
+            <AlertDismissable />
+          </Col>
+          <Col sm={2}></Col>
+        </Row>
+        <Row>
+          <Col sm={8}>
+            <Forms />
+          </Col>
+          <Col sm={4}>sm=4</Col>
+        </Row>
 
-          <Form.Group controlId="formBasicPassword">
-            <Form.Label>Password</Form.Label>
-            <Form.Control type="password" placeholder="Password" />
-          </Form.Group>
-          <Form.Group controlId="formBasicCheckbox">
-            <Form.Check type="checkbox" label="Check me out" />
-          </Form.Group>
-          <Button variant="primary" type="submit">
-            Submit
-  </Button>
-        </Form></Col>
-        <Col sm={4}>sm=4</Col>
-      </Row>
+        <Row>
+          <Col sm={8}>
 
-      <Row>
-        <Col sm={8}>
-
-          <Card >
-            <Accordion.Toggle as={Card.Header} eventKey="0">
-              Contact us
+            <Card >
+              <Accordion.Toggle as={Card.Header} eventKey="0">
+                Contact us
             </Accordion.Toggle>
-          </Card>
-        </Col>
-      </Row>
-    </Container>
-  </div>
-);
+            </Card>
+          </Col>
+        </Row>
+      </Container>
+    </div>
+  );
 }
 
 export default App;
