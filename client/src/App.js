@@ -14,43 +14,47 @@ import { Form } from 'react-bootstrap';
 import { Figure } from 'react-bootstrap';
 import AlertDismissable from "./components/AlertDismissable";
 import Forms from "./components/Forms";
+import Breadcrumbs from "./components/Breadcrumbs";
+import Figures from "./components/Figures";
 function App() {
   return (
     <div className="App">
 
       <Container>
-        <Row>
-          <Col sm={12}>
-          </Col>
-
-        </Row>
-        <br>
-        </br>
         <br>
         </br>
         <Row>
           <Col sm={2}></Col>
           <Col sm={8}>
-            <AlertDismissable />
+          <AlertDismissable />
+          </Col>
+          <Col sm={2}></Col>
+        </Row>
+
+        <br>
+        </br>
+        <Row>
+          <Col sm={2}></Col>
+          <Col sm={8}>
+            
+            <Figures/>
           </Col>
           <Col sm={2}></Col>
         </Row>
         <Row>
+          <Col sm={2}></Col>
           <Col sm={8}>
             <Forms />
           </Col>
-          <Col sm={4}>sm=4</Col>
+          <Col sm={2}></Col>
         </Row>
-
+        <br></br>
         <Row>
+          <Col sm={2}></Col>
           <Col sm={8}>
-
-            <Card >
-              <Accordion.Toggle as={Card.Header} eventKey="0">
-                Contact us
-            </Accordion.Toggle>
-            </Card>
+            <Breadcrumbs />
           </Col>
+          <Col sm={2}></Col>
         </Row>
       </Container>
     </div>
