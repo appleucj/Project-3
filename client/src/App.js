@@ -1,12 +1,12 @@
 import React from 'react';
 //import logo from './logo.svg';
-import AuthenticatedApp from '../utils/AuthenticatedApp';
-import UnathenticatedApp from '../utils/UnauthenticatedApp';
-import { useUserContext } from '../utils/userContext';
+import AuthenticatedApp from './components/utils/AuthenticatedApp';
+import UnathenticatedApp from './components/utils/UnauthenticatedApp';
+import { useAuthContext } from './components/utils/UserContext';
 
 
 function App() {
-  const [state, _] = useUserContext();
+  const [state, _] = useAuthContext();
 
   return state.loggedIn ? (
     <AuthenticatedApp />

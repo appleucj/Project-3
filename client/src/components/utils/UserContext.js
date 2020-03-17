@@ -3,6 +3,8 @@ import React, { createContext, useState, useContext, useReducer } from "react";
 const UserContext = createContext();
 const { Provider } = UserContext
 
+const AuthContext = createContext();
+
 //the reducer
 const reducer = (state, action) => {
     switch (action.type) {
@@ -23,7 +25,7 @@ const AuthProvider = (props) => {
     })
 
     return (
-        <Provider value={[state, dispatch]} {...props} />
+        <AuthContext.Provider value={[state, dispatch]} {...props} />
     )    
 }
 
@@ -49,6 +51,7 @@ const UserProvider = (props) => {
 }
 
 // create a hook to use the context
+const useAuthContext = () => useContext(AuthContext)
 const useUserContext = () => useContext(UserContext);
 
-export { UserProvider, useUserContext };
+export { UserProvider, useUserContext, AuthProvider, useAuthContext};
