@@ -4,7 +4,7 @@ const apiRoutes = require("./routes/apiRoutes");
 
 const app = express();
 
-const PORT = process.env.Port || 4000;
+const PORT = process.env.PORT || 4000;
 
 //be able to read the bode ofn a post in json
 app.use(express.urlencoded({extended: true}));
