@@ -1,19 +1,18 @@
-import React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import  Login from "./pages/Login";
+import React from 'react';
+//import logo from './logo.svg';
+import AuthenticatedApp from './components/utils/AuthenticatedApp';
+import UnathenticatedApp from './components/utils/UnauthenticatedApp';
+import { useAuthContext } from './components/utils/UserContext';
+
 
 function App() {
-  return (
-    <Router>
-      <div>
-        <Switch>
-          <Route exact path={["/", "/Login"]}>
-            <Login />
-          </Route>                   
-        </Switch>
-      </div>
-    </Router>
-  );
-}
+  const [state, _] = useAuthContext();
+
+  return state.loggedIn ? (
+    <AuthenticatedApp />
+  ):(
+    <UnathenticatedApp />
+  )  
+}   
 
 export default App;

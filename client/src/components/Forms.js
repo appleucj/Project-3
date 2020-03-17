@@ -2,8 +2,18 @@ import React, { useState } from "react";
 import { Form } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
+import { useAuthContext } from './utils/UserContext';
+
 const Forms = () => {
   const [show, setShow] = useState(true);
+  
+  const[_,dispatch] = useAuthContext();
+
+  const login = () => {
+      dispatch({
+          type: "login"
+      });
+  }
 
   return (
     <Form>
@@ -56,8 +66,8 @@ const Forms = () => {
 
 
 
-      <Button variant="primary" type="submit">
-        Submit
+      <Button variant="primary" type="submit" onClick={login}>
+        <span>Submit</span>
       </Button>
     </Form>
   )
