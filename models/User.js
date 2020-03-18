@@ -2,14 +2,14 @@ const mongoose = require("mongoose");
 
 const userSchema = new mongoose.Schema({
     email: String,
+    password: String,
     firstName: String,
     lastName: String,
     phoneNumber: String,
-    address: String,
+    address: String, 
     city: String,
-    State: String,
+    state: String,
     zipCode: String,
-    password: String,
     createdAt: {
         type: Date, 
         default: Date.now

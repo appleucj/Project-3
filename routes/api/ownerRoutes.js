@@ -3,17 +3,12 @@ const db = require("../../models");
 
 // Create
 router.post("/", (req, res) => {
-    const { email, password, firstName, lastName, phoneNumber, address, city, state, zipCode } = req.body;
-  db.User.create({
-    email: email,
-    password: password,
-    firstName: firstName,
-    lastName: lastName,
+  const { username, phoneNumber, firstName, owner_id } = req.body;
+  db.Pet.create({
+    username: username,
     phoneNumber: phoneNumber,
-    address: address, 
-    city: city,
-    state: state,
-    zipCode: zipCode,
+    firstName: firstName,
+    owner: owner_id
   }).then(result => {
     res.json(result)
   });
@@ -29,17 +24,12 @@ router.get("/", (req, res) => {
 
 // Update
 router.put("/:id", (req, res) => {
-  const { email, password, firstName, lastName, phoneNumber, address, city, state, zipCode } = req.body;
+    const { username, phoneNumber, firstName, owner_id } = req.body;
   db.User.findOneAndUpdate({
-    email: email,
-    password: password,
-    firstName: firstName,
-    lastName: lastName,
+    username: username,
     phoneNumber: phoneNumber,
-    address: address, 
-    city: city,
-    state: state,
-    zipCode: zipCode,
+    firstName: firstName,
+    owner: owner_id
   }).then(result => {
     res.json(result)
   });
