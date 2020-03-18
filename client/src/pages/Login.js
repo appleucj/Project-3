@@ -9,11 +9,17 @@ import Forms from "../components/Forms";
 import Breadcrumbs from "../components/Breadcrumbs";
 import Navbars from "../components/Navbar";
 import { Navbar } from 'react-bootstrap';
+import { Image } from 'react-bootstrap';
+import pupy from './pupy.jpeg';
 
 function Login() {
-
   return (
-    <div style={{ backgroundColor: "lightgrey" }}>
+    <div style={{ 
+       backgroundImage:`url(${pupy})`,  
+       backgroundPosition: 'center',
+       backgroundSize: 'cover',
+       backgroundRepeat: 'no-repeat',
+       minHeight: '100vh' }}>
       <Container>
         <Row>
           <Navbar bg="dark" variant="dark" width="100%" fixed="top">
@@ -25,12 +31,14 @@ function Login() {
                 height="30"
                 className="d-inline-block align-top"
               />{' '}
-      Pets Care
-    </Navbar.Brand>
+            Pets Care
+           </Navbar.Brand>
           </Navbar>
         </Row>
         <br>
         </br>
+        <br></br>
+        <br></br>
         <Row>
           <Col sm={2}></Col>
           <Col sm={8}>
@@ -38,8 +46,7 @@ function Login() {
           </Col>
           <Col sm={2}></Col>
         </Row>
-        <br>
-        </br>
+        
         <Row>
           <Col sm={2}></Col>
           <Col sm={8}>

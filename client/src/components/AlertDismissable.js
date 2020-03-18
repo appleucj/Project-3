@@ -9,7 +9,7 @@ const AlertDismissable = () => {
     <div>
      <div>
       <p> 
-        hi
+        
       {/* //role="banner"
       //  class="NavMain-StyledNavbar-module--cls2--2pVZv NavMain-StyledNavbar-module--cls1--3GekH navbar navbar-expand navbar-dark"
        > */}
@@ -20,15 +20,7 @@ const AlertDismissable = () => {
       <Alert show={show} variant="info">
         <Alert.Heading>Welcom to Pet Caring!</Alert.Heading>
         <p>We are an online platform that allow pet owners post their needs.</p>
-
-        <div className="d-flex justify-content-end">
-
-          <Button onClick={() => setShow(false)} variant="outline-info">
-            Logout
-            </Button>
-        </div>
-
-          
+              
         </Alert>
 
         {!show && <Button onClick={() => setShow(true)}>Show Alert</Button>}
