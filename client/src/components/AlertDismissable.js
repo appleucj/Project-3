@@ -6,17 +6,13 @@ const AlertDismissable = () => {
 
     return (
       <>
-        <Alert show={show} variant="success">
-          <Alert.Heading>How's it going?!</Alert.Heading>
-          <p>
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget
-            lacinia odio sem nec elit. Cras mattis consectetur purus sit amet
-            fermentum.
-          </p>
-          <hr />
+        <Alert show={show} variant="info">
+          <Alert.Heading>Welcom to Pet Caring!</Alert.Heading>
+          <p>We are an online platform that allow pet owners post their needs.</p>
+         
           <div className="d-flex justify-content-end">
-            <Button onClick={() => setShow(false)} variant="outline-success">
-              Close me ya'll!
+            <Button onClick={() => setShow(false)} variant="outline-info">
+              Sign-In 
             </Button>
           </div>
         </Alert>
@@ -26,4 +22,4 @@ const AlertDismissable = () => {
     );
 }
 
-export default AlertDismissable;
+export default AlertDismissable
