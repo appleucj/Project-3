@@ -4,10 +4,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container } from 'react-bootstrap';
 import { Row } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
-import  AlertDismissable  from '../components/AlertDismissable';
-import  Alertlink  from '../components/Alertlink';
-import  Stackings  from '../components/Stacking';
-
+import AlertDismissable from '../components/AlertDismissable';
+import Alertlink from '../components/Alertlink';
+import Stackings from '../components/Stacking';
+import Portfolio from '../components/Portfolio';
 function Dashboard() {
 
     return (
@@ -38,12 +38,12 @@ function Dashboard() {
                         <Stackings />
                     </Col>
                     <Col sm={6}>
-                     
+                        <Portfolio />
                     </Col>
-                        <Col sm={2}></Col>
+                    <Col sm={2}></Col>
                 </Row>
             </Container >
-         </div>
+        </div>
     )
 }
 
