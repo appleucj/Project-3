@@ -15,8 +15,7 @@ export default () => {
     return (
         
         <div>
-            hi
-            <Router>
+        <Router>
             <div>
                 <Switch>
                     <Route exact path={["/", "/Dashboard"]}>

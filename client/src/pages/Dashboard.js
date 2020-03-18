@@ -8,11 +8,28 @@ import AlertDismissable from '../components/AlertDismissable';
 import Alertlink from '../components/Alertlink';
 import Stackings from '../components/Stacking';
 import Portfolio from '../components/Portfolio';
+import { Navbar } from 'react-bootstrap';
+
 function Dashboard() {
 
     return (
         <div style={{ backgroundColor: "lightgrey" }}>
             <Container>
+
+                <Row>
+                    <Navbar bg="dark" variant="dark" width="100%" fixed="top">
+                        <Navbar.Brand href="#home">
+                            <img
+                                alt=""
+                                src="/logo.svg"
+                                width="30"
+                                height="30"
+                                className="d-inline-block align-top"
+                            />{' '}
+      Pets Care
+    </Navbar.Brand>
+                    </Navbar>
+                </Row>
                 <br>
                 </br>
                 <Row>
