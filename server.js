@@ -9,6 +9,7 @@ const PORT = process.env.PORT || 4000;
 //be able to read the bode ofn a post in json
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+
 if (process.env.NODE_ENV === "production") {
     app.use(express.static("client/build"));
 }
