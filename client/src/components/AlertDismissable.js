@@ -8,7 +8,7 @@ const AlertDismissable = () => {
       <>
         <Alert show={show} variant="info">
           <Alert.Heading>Welcom to Pet Caring!</Alert.Heading>
-          
+          <p>We are an online platform that allow pet owners post their needs.</p>
          
           <div className="d-flex justify-content-end">
             <Button onClick={() => setShow(false)} variant="outline-info">
@@ -22,4 +22,4 @@ const AlertDismissable = () => {
     );
 }
 
-export default AlertDismissable;
+export default AlertDismissable
