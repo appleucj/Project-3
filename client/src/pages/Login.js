@@ -7,33 +7,25 @@ import { Col } from 'react-bootstrap';
 import AlertDismissable from "../components/AlertDismissable";
 import Forms from "../components/Forms";
 import Breadcrumbs from "../components/Breadcrumbs";
-import Figures from "../components/Figures";
+import Navbar from "../components/Navbar";
 
 
 function Login() {
 
   return (
+    <div style={{ backgroundColor: "lightgrey" }}>
       <Container>
         <br>
         </br>
         <Row>
           <Col sm={2}></Col>
           <Col sm={8}>
-          <AlertDismissable />
+          <Navbar />
           </Col>
           <Col sm={2}></Col>
         </Row>
-
         <br>
         </br>
-        <Row>
-          <Col sm={2}></Col>
-          <Col sm={8}>
-            
-            <Figures/>
-          </Col>
-          <Col sm={2}></Col>
-        </Row>
         <Row>
           <Col sm={2}></Col>
           <Col sm={8}>
@@ -50,6 +42,7 @@ function Login() {
           <Col sm={2}></Col>
         </Row>
       </Container >
+      </div>
   );
 }
 

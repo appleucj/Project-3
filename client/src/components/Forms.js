@@ -24,7 +24,10 @@ const Forms = () => {
         <Col>
           <Form.Control placeholder="Last name" />
         </Col>
+       
       </Form.Row>
+      
+      <br></br>
       <Form.Row>
         <Form.Group as={Col} controlId="formGridEmail">
           <Form.Label>Email</Form.Label>
