@@ -29,7 +29,6 @@ function Dashboard() {
                          </Navbar.Brand>
                     </Navbar>
                     <div className="d-flex justify-content-end">
-
                         <Button  variant="outline-info">
                             Logout
                         </Button>
@@ -43,7 +42,6 @@ function Dashboard() {
                     </Col>
                     <Col sm={2}></Col>
                 </Row>
-
                 <br></br>
                 <Row>
                     <Col sm={2}></Col>
@@ -52,7 +50,6 @@ function Dashboard() {
                     </Col>
                     <Col sm={2}></Col>
                 </Row>
-
                 <br></br>
                 <Row>
                     <Col sm={2}>
@@ -62,12 +59,8 @@ function Dashboard() {
                     </Col>
                     <Col sm={6}>
                         <Portfolio />
-
-
                     </Col>
                 </Row>
-
-
             </Container >
         </div>
     )
