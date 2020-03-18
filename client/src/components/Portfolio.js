@@ -17,11 +17,11 @@ const Portfolio = () => {
             <br>
             </br>
             <Row>
-                <Col sm={2} >
-                    <Image src={petsImg} roundedCircle />
+                <Col sm={4} >
+                    <Image src={petsImg} roundedCircle fluid />
                 </Col>
                 <Col sm={4}>
-                    <Card style={{ width: '28rem' }}>
+                    <Card style={{ width: '18rem' }}>
                         <Card.Body>
                             <Card.Title>Card Title</Card.Title>
                             <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
