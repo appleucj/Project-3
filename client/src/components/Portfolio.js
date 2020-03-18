@@ -4,8 +4,9 @@ import React, { useState } from 'react';
 import { Container } from 'react-bootstrap';
 import { Row } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
-import { Card }from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 import { Image } from 'react-bootstrap';
+import petsImg from './pets.png';
 
 const Portfolio = () => {
 
@@ -17,10 +18,10 @@ const Portfolio = () => {
             </br>
             <Row>
                 <Col sm={2} >
-                    <Image src="pets.png" roundedCircle />
+                    <Image src={petsImg} roundedCircle />
                 </Col>
                 <Col sm={4}>
-                    <Card style={{ width: '18rem' }}>
+                    <Card style={{ width: '28rem' }}>
                         <Card.Body>
                             <Card.Title>Card Title</Card.Title>
                             <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
