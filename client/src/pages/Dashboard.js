@@ -9,13 +9,12 @@ import Alertlink from '../components/Alertlink';
 import Stackings from '../components/Stacking';
 import Portfolio from '../components/Portfolio';
 import { Navbar } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 
 function Dashboard() {
-
     return (
         <div style={{ backgroundColor: "lightgrey" }}>
             <Container>
-
                 <Row>
                     <Navbar bg="dark" variant="dark" width="100%" fixed="top">
                         <Navbar.Brand href="#home">
@@ -26,12 +25,17 @@ function Dashboard() {
                                 height="30"
                                 className="d-inline-block align-top"
                             />{' '}
-      Pets Care
-    </Navbar.Brand>
+                             Pets Care
+                         </Navbar.Brand>
                     </Navbar>
+                    <div className="d-flex justify-content-end">
+
+                        <Button  variant="outline-info">
+                            Logout
+                        </Button>
+                    </div>
                 </Row>
-                <br>
-                </br>
+                <br></br>
                 <Row>
                     <Col sm={2}></Col>
                     <Col sm={8}>
@@ -39,8 +43,8 @@ function Dashboard() {
                     </Col>
                     <Col sm={2}></Col>
                 </Row>
-                <br>
-                </br>
+
+                <br></br>
                 <Row>
                     <Col sm={2}></Col>
                     <Col sm={8}>
@@ -48,17 +52,22 @@ function Dashboard() {
                     </Col>
                     <Col sm={2}></Col>
                 </Row>
+
                 <br></br>
                 <Row>
-                    <Col sm={2}></Col>
+                    <Col sm={2}>
+                    </Col>
                     <Col sm={2}>
                         <Stackings />
                     </Col>
                     <Col sm={6}>
                         <Portfolio />
+
+
                     </Col>
-                    <Col sm={2}></Col>
                 </Row>
+
+
             </Container >
         </div>
     )

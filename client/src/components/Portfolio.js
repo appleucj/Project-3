@@ -6,7 +6,12 @@ import { Row } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
 import { Card } from 'react-bootstrap';
 import { Image } from 'react-bootstrap';
-import petsImg from './pets.png';
+import petsImg from './dog.jpg';
+import { Navbar } from 'react-bootstrap';
+import { Nav } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
+import { Form } from 'react-bootstrap';
+import { FormControl } from 'react-bootstrap';
 
 const Portfolio = () => {
 
@@ -38,7 +43,19 @@ const Portfolio = () => {
             <br>
             </br>
             <Row>
-
+                <Col sm={8}>
+            <Navbar bg="blue" variant="dark">
+                <Navbar.Brand href="#home">Navbar</Navbar.Brand>
+                    <Nav className="mr-auto">
+                        <Nav.Link href="#home">Home</Nav.Link>
+                        <Button variant="outline-light">Search</Button>
+                    </Nav>
+                    {/* <Form inline> */}
+                         {/* <FormControl type="text" placeholder="Search" className="mr-sm-2" /> */}
+                         
+                    {/* </Form> */}
+            </Navbar>
+            </Col>
             </Row>
             <br></br>
             <Row>
