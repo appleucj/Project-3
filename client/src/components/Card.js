@@ -3,10 +3,10 @@ import { Card } from 'react-bootstrap';
 
 
 <Card >
-    <Card.Body>
+    <Card.Body style={{ height: '8rem' }}>
         <Card.Title>
             <Image src="../../view/feature" roundedCircle />
-            <Card style={{ width: '18rem' }}>
+            <Card >
                 <Card.Body>
                     <Card.Title>Card Title</Card.Title>
                     <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>

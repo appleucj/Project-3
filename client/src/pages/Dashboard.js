@@ -11,6 +11,7 @@ import Portfolio from '../components/Portfolio';
 import { Navbar } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 import Headers from '../components/header';
+import Footers from '../components/footer';
 
 
 function Dashboard() {
@@ -51,8 +52,10 @@ function Dashboard() {
                     <Col sm={6}>
                         <Portfolio />
                     </Col>
+
                 </Row>
             </Container >
+            <Footers></Footers>
         </div>
     )
 }
