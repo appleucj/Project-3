@@ -32,7 +32,7 @@ function Login() {
         <Row >
           <Col sm={2}></Col>
           <Col sm={8}>
-            <Image width='80%' src={pupy} fluid />
+            <Image width='80%'  src={pupy} fluid />
           </Col>
           <Col sm={2}></Col>
         </Row>
