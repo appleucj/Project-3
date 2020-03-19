@@ -4,13 +4,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container } from 'react-bootstrap';
 import { Row } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
-import AlertDismissable from "../components/AlertDismissable";
+// import AlertDismissable from "../components/AlertDismissable";
 import Forms from "../components/Forms";
 import Breadcrumbs from "../components/Breadcrumbs";
-import Navbars from "../components/Navbar";
+// import Navbars from "../components/Navbar";
 import { Navbar } from 'react-bootstrap';
-import { Image } from 'react-bootstrap';
+// import { Image } from 'react-bootstrap';
 import pupy from './pupy.jpeg';
+import Headers from '../components/header'
 
 function Login() {
   return (
@@ -23,7 +24,8 @@ function Login() {
     }}>
       <Container>
         <Row>
-          <Navbar bg="dark" variant="dark" width="100%" fixed="top">
+          <Headers />
+          {/* <Navbar bg="dark" variant="dark" width="100%" fixed="top">
             <Navbar.Brand href="#home">
               <img
                 alt=""
@@ -32,9 +34,9 @@ function Login() {
                 height="30"
                 className="d-inline-block align-top"
               />{' '}
-            Pets Care
+            Pet Care Hello
            </Navbar.Brand>
-          </Navbar>
+          </Navbar> */}
         </Row>
         <br>
         </br>
