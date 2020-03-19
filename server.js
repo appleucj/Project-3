@@ -1,10 +1,10 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const userRoutes = require("./routes/api/userRoutes");
-const userRoutes = require("./routes/api/petRoutes");
-const userRoutes = require("./routes/api/ownerRoutes");
-const userRoutes = require("./routes/api/inboxRoutes");
-const userRoutes = require("./routes/api/activityRoutes");
+// const userRoutes = require("./routes/api/userRoutes");
+// const petRoutes = require("./routes/api/petRoutes");
+// const ownerRoutes = require("./routes/api/ownerRoutes");
+// const inboxRoutes = require("./routes/api/inboxRoutes");
+// const activityRoutes = require("./routes/api/activityRoutes");
 
 const app = express();
 
@@ -20,11 +20,11 @@ if (process.env.NODE_ENV === "production") {
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/merntodo', { useNewUrlParser: true });
 
 //api routes
-app.use("/api/user", userRoutes);
-app.use("/api/pet", petRoutes);
-app.use("/api/owner", ownerRoutes);
-app.use("/api/inbox", inboxRoutes);
-app.use("/api/activity", activityRoutes);
+// app.use("/api/user", userRoutes);
+// app.use("/api/pet", petRoutes);
+// app.use("/api/owner", ownerRoutes);
+// app.use("/api/inbox", inboxRoutes);
+// app.use("/api/activity", activityRoutes);
 app.get("*", (req, res) => {
     res.send("sorry. no page here. go somewhere else.")
 });
