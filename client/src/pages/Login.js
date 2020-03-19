@@ -10,18 +10,20 @@ import Breadcrumbs from "../components/Breadcrumbs";
 // import Navbars from "../components/Navbar";
 import { Navbar } from 'react-bootstrap';
  import { Image } from 'react-bootstrap';
-import pupy from './pupy.jpeg';
+import pupy from '../components/dogwalker.jpeg';
 import Headers from '../components/header'
+import Footers from '../components/footer'
 
 function Login() {
   return (
-    <div style={{
+    <div >
+    {/* style={{
       backgroundImage: `url(${pupy})`,
       backgroundPosition: 'center',
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat',
       minHeight: '100vh'
-    }}>
+    }} */}
       <Container>
         <Row>
           <Headers />
@@ -32,7 +34,7 @@ function Login() {
         <Row >
           <Col sm={2}></Col>
           <Col sm={8}>
-            <Image width='80%'  src={pupy} fluid />
+            <Image width='100%' height="80%" src={pupy} fluid />
           </Col>
           <Col sm={2}></Col>
         </Row>
@@ -53,14 +55,18 @@ function Login() {
           {/* <Col sm={2}></Col> */}
         </Row>
         <br></br>
-        <Row>
+        {/* <Row>
           <Col sm={2}></Col>
           <Col sm={8}>
             <Breadcrumbs />
           </Col>
           <Col sm={2}></Col>
-        </Row>
+        </Row> */}
+        
+      
+      
       </Container >
+      <Footers />
     </div>
   );
 }
