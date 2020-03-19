@@ -9,7 +9,7 @@ import Forms from "../components/Forms";
 import Breadcrumbs from "../components/Breadcrumbs";
 // import Navbars from "../components/Navbar";
 import { Navbar } from 'react-bootstrap';
-import { Image } from 'react-bootstrap';
+ import { Image } from 'react-bootstrap';
 import pupy from './pupy.jpeg';
 import Headers from '../components/header'
 
@@ -25,18 +25,6 @@ function Login() {
       <Container>
         <Row>
           <Headers />
-          {/* <Navbar bg="dark" variant="dark" width="100%" fixed="top">
-            <Navbar.Brand href="#home">
-              <img
-                alt=""
-                src="/logo.svg"
-                width="30"
-                height="30"
-                className="d-inline-block align-top"
-              />{' '}
-            Pet Care Hello
-           </Navbar.Brand>
-          </Navbar> */}
         </Row>
         <br>
         </br>
@@ -50,19 +38,19 @@ function Login() {
         </Row>
         <br></br>
         <Row>
-          <Col sm={2}></Col>
-          <Col sm={8}>
+          {/* <Col sm={2}></Col> */}
+          <Col sm={12}>
             <Navbar />
           </Col>
-          <Col sm={2}></Col>
+          {/* <Col sm={2}></Col> */}
         </Row>
 
         <Row>
-          <Col sm={2}></Col>
-          <Col sm={8}>
+          {/* <Col sm={2}></Col> */}
+          <Col sm={12}>
             <Forms />
           </Col>
-          <Col sm={2}></Col>
+          {/* <Col sm={2}></Col> */}
         </Row>
         <br></br>
         <Row>
