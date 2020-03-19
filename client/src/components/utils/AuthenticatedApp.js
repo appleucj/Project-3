@@ -1,7 +1,7 @@
 import React from "react";
 import { useAuthContext } from "./UserContext";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import  Dashboard from "../../pages/dashboard";
+import  Dashboard from "../../pages/Dashboard";
 
 
 export default () => {
