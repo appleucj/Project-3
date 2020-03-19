@@ -9,7 +9,7 @@ import Forms from "../components/Forms";
 import Breadcrumbs from "../components/Breadcrumbs";
 // import Navbars from "../components/Navbar";
 import { Navbar } from 'react-bootstrap';
-// import { Image } from 'react-bootstrap';
+import { Image } from 'react-bootstrap';
 import pupy from './pupy.jpeg';
 import Headers from '../components/header'
 
@@ -43,9 +43,10 @@ function Login() {
         <br></br>
         <Row >
           <Col sm={2}></Col>
-          <Col sm={8}
-        <Image width='80%'  src={pupy} fluid />
-        <Col sm={2}></Col>
+          <Col sm={8}>
+            <Image width='80%'  src={pupy} fluid />
+          </Col>
+          <Col sm={2}></Col>
         </Row>
         <br></br>
         <Row>
