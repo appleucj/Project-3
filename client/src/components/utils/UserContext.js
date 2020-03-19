@@ -54,4 +54,4 @@ const UserProvider = (props) => {
 const useAuthContext = () => useContext(AuthContext)
 const useUserContext = () => useContext(UserContext);
 
-export { UserProvider, useUserContext, AuthProvider, useAuthContext};
+export { UserProvider, useUserContext, AuthProvider, useAuthContext };

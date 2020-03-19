@@ -6,14 +6,14 @@ const Headers = () => {
     return (
         <Navbar bg="dark" variant="dark" width="100%" fixed="top">
         <Navbar.Brand href="#home">
-            <img
+            {/* <img
                 alt=""
                 src="/logo.svg"
                 width="30"
                 height="30"
                 className="d-inline-block align-top"
-            />{' '}
-            Pet Care Hello !!!
+            />{' '} */}
+            Walk-About (Premier Pet Services)
         </Navbar.Brand>
         <Navbar.Toggle />
             <Navbar.Collapse className="justify-content-end">
