@@ -3,6 +3,7 @@ import { Form } from 'react-bootstrap';
 import { Button } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
 import { useAuthContext } from './utils/UserContext';
+import { Row } from 'react-bootstrap';
 
 const Forms = () => {
   const [show, setShow] = useState(true);
@@ -27,67 +28,71 @@ const Forms = () => {
     //     <Form.Control type="password" placeholder="Password" />
     //   </Form.Group>
     // </Form>
-  //   <Row xs={1} md={2}>
-  //   <Col>1 of 3</Col>
-  //   <Col>2 of 3</Col>
-  //   <Col>3 of 3</Col>
-  // </Row>
+    //   <Row xs={1} md={2}>
+    //   <Col>1 of 3</Col>
+    //   <Col>2 of 3</Col>
+    //   <Col>3 of 3</Col>
+    // </Row>
 
     <Form>
-      <Form.Row>
-        <Col>
-          <Form.Control placeholder="First name" />
+       <Form.Group as={Row} controlId="formHorizontalEmail">
+        <Col sm={2}></Col>
+        <Form.Label fontsize='8' column sm={2} positon="relative" left="50px">
+         First Name
+        </Form.Label>
+        <Col sm={6}>
+          <Form.Control type="text" placeholder="First Name" />
         </Col>
-        <Col>
-          <Form.Control placeholder="Last name" />
-        </Col>
-
-      </Form.Row>
-
-      <Form.Row>
-        <Form.Group as={Col} controlId="formGridEmail">
-          <Form.Label>Email</Form.Label>
-          <Form.Control type="email" placeholder="Enter email" />
-        </Form.Group>
-
-        <Form.Group as={Col} controlId="formGridPassword">
-          <Form.Label>Password</Form.Label>
-          <Form.Control type="password" placeholder="Password" />
-        </Form.Group>
-      </Form.Row>
-      <Form.Row>
-      <Form.Group controlId="formGridAddress1">
-        <Form.Label>Address</Form.Label>
-        <Form.Control placeholder="Address" />
+        <Col sm={2}></Col>
       </Form.Group>
-      </Form.Row>
+
+      <Form.Group as={Row} controlId="formHorizontalLastName">
+        <Col sm={2}></Col>
+        <Form.Label column sm={2}>
+          Last Name
+        </Form.Label>
+        <Col sm={6}>
+          <Form.Control type="text" placeholder="Last Name" />
+        </Col>
+        <Col sm={1}></Col>
+      </Form.Group>
+
+      <Form.Group as={Row} controlId="formHorizontalEmail">
+        <Col sm={2}></Col>
+        <Form.Label column sm={1}>
+          Email
+        </Form.Label>
+        <Col sm={7}>
+          <Form.Control type="email" placeholder="Email" />
+        </Col>
+        <Col sm={2}></Col>
+      </Form.Group>
 
 
-      <Form.Row>
-        <Form.Group as={Col} controlId="formGridCity">
-          <Form.Label>City</Form.Label>
-          <Form.Control />
-        </Form.Group>
+      <Form.Group as={Row} controlId="formHorizontalPassword">
+        <Col sm={2}></Col>
+        <Form.Label column sm={1}>
+          Password
+</Form.Label>
+        <Col sm={7}>
+          <Form.Control type="password" placeholder="Password" />
+        </Col>
+        <Col sm={2}></Col>
+      </Form.Group>
 
-        <Form.Group as={Col} controlId="formGridState">
-          <Form.Label>State</Form.Label>
-          <Form.Control as="select" value="Choose...">
-            <option>Choose...</option>
-            <option>...</option>
-          </Form.Control>
-        </Form.Group>
-
-        <Form.Group as={Col} controlId="formGridZip">
-          <Form.Label>Zip</Form.Label>
-          <Form.Control />
-        </Form.Group>
-      </Form.Row>
+      <Form.Group as={Row} controlId="formHorizontalPassword">
+        <Col sm={2}></Col>
+        <Form.Label column sm={1}>
+          Confirm
+    </Form.Label>
+        <Col sm={7}>
+          <Form.Control type="password" placeholder="Confirm Password" />
+        </Col>
+        <Col sm={2}></Col>
+      </Form.Group>
 
 
 
-      <Button variant="primary" type="submit" onClick={login}>
-        <span>Submit</span>
-      </Button>
     </Form>
   )
 }
