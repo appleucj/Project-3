@@ -4,7 +4,7 @@ import { Navbar } from 'react-bootstrap';
 const Footers = () => {
 
     return (
-        <Navbar bg="dark" variant="dark" width='100%' position='sticky'>
+        <Navbar bg="dark" variant="dark" width='100%' position='relative' align-bottom="-100">
             <Navbar.Brand href="#home"  >
                 <img
                     src="/logo.svg"
