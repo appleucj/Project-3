@@ -83,7 +83,7 @@ const Forms = () => {
         <Col sm={2}></Col>
       </Form.Group>
       <div>
-      <Button variant="primary" type="submit">
+      <Button onClick={login} variant="primary" type="submit">
             Submit
           </Button>
       </div>

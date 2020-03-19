@@ -1,9 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import  Login from "../../pages/login";
+// import  Login from "../../pages/login";
 import Home from "../../pages/home";
 
 export default () => {
+  
     return (
       <div>
         <Router>
