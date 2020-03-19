@@ -1,7 +1,7 @@
 import React from "react";
 import { useAuthContext } from "./UserContext";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import  Dashboard from "../../pages/Dashboard";
+import  Dashboard from "../../pages/dashboard";
 
 
 export default () => {
@@ -18,7 +18,7 @@ export default () => {
         <Router>
             <div>
                 <Switch>
-                    <Route exact path={["/", "/Dashboard"]}>
+                    <Route exact path={["/", "/dashboard"]}>
                          <Dashboard /> 
                         
                     </Route>                   

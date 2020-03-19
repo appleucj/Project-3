@@ -6,7 +6,7 @@ import { Row } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
 // import AlertDismissable from "../components/AlertDismissable";
 import Forms from "../components/Forms";
-import Breadcrumbs from "../components/Breadcrumbs";
+// import Breadcrumbs from "../components/Breadcrumbs";
 // import Navbars from "../components/Navbar";
 import { Navbar } from 'react-bootstrap';
  import { Image } from 'react-bootstrap';
@@ -16,24 +16,26 @@ import Footers from '../components/footer'
 
 function Home() {
   return (
-    <div >
-    {/* style={{
-      backgroundImage: `url(${pupy})`,
-      backgroundPosition: 'center',
-      backgroundSize: 'cover',
-      backgroundRepeat: 'no-repeat',
-      minHeight: '100vh'
-    }} */}
+    <div 
+    style={{
+      // backgroundImage: `url(${pupy})`,
+      // backgroundPosition: 'center',
+      // backgroundSize: 'cover',
+      // backgroundRepeat: 'no-repeat',
+      // minHeight: '100vh'
+      background: "lightgrey"
+    }}
+    >
       <Container>
         <Row>
           <Headers />
         </Row>
-        <br>
-        </br>
-        <br></br>
+        <br />
+        <br />
         <Row >
           <Col sm={2}></Col>
           <Col sm={8}>
+            <br />
             <Image width='100%' height="80%" src={pupy} fluid />
           </Col>
           <Col sm={2}></Col>
@@ -63,8 +65,6 @@ function Home() {
           <Col sm={2}></Col>
         </Row> */}
         
-      
-      
       </Container >
       <Footers />
     </div>

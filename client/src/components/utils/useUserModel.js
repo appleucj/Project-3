@@ -19,6 +19,7 @@ const useUserModel = () => {
         name: {
             value: nameState,
             onChange: e => setName(e.target.value)
-    }
+        }
 
+    }
 }
