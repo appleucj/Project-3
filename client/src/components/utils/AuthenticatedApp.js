@@ -25,8 +25,8 @@ export default () => {
                 </Switch>
             </div>
         </Router>
-            <p>Welcome to the PetCare.</p>
-            <button onClick={logout}>Logout</button>
+            {/* <p>Welcome to the PetCare.</p>
+            <button onClick={logout}>Logout</button> */}
         </div>
     )
 }
