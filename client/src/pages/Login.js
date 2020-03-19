@@ -15,12 +15,13 @@ import Headers from '../components/header'
 
 function Login() {
   return (
-    <div style={{ 
-       backgroundImage:`url(${pupy})`,  
-       backgroundPosition: 'center',
-       backgroundSize: 'cover',
-       backgroundRepeat: 'no-repeat',
-       minHeight: '100vh' }}>
+    <div style={{
+      backgroundImage: `url(${pupy})`,
+      backgroundPosition: 'center',
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+      minHeight: '100vh'
+    }}>
       <Container>
         <Row>
           <Headers />
@@ -40,6 +41,12 @@ function Login() {
         <br>
         </br>
         <br></br>
+        <Row >
+          <Col sm={2}></Col>
+          <Col sm={8}
+        <Image width='80%'  src={pupy} fluid />
+        <Col sm={2}></Col>
+        </Row>
         <br></br>
         <Row>
           <Col sm={2}></Col>
@@ -48,7 +55,7 @@ function Login() {
           </Col>
           <Col sm={2}></Col>
         </Row>
-        
+
         <Row>
           <Col sm={2}></Col>
           <Col sm={8}>

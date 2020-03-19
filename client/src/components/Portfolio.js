@@ -17,23 +17,22 @@ const Portfolio = () => {
     const [show, setShow] = useState(true);
     return (
         <Container>
-            <br>
-            </br>
+            
             <Row>
 
                 <Col sm={8}>
-                    <Card style={{ width: '38rem' }}>
+                    <Card style={{ width: '33rem', height:'30rem' }}>
                         <Col sm={4} >
-                            <Image src={img} fluid />
+                            <Image style={{padding:'2rem'}} src={img} fluid />
                         </Col>
                         <Card.Body>
                             <Card.Title>Steven</Card.Title>
-                            <Card.Subtitle className="mb-2 text-muted">Dog walker</Card.Subtitle>
+                            <Card.Subtitle className="mb-2 text-muted">Manhattan, New York</Card.Subtitle>
                             <Card.Text>
                                 I can walk your dog, my rate is $20 per hour.
                             </Card.Text>
                             <Card.Link href="#">Contact Me</Card.Link>
-                            <Card.Link href="#">Online Chatting</Card.Link>
+                            <Card.Link href="#">Leave a Message</Card.Link>
                         </Card.Body>
                     </Card>
                 </Col>
