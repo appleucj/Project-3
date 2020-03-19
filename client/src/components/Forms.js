@@ -6,16 +6,33 @@ import { useAuthContext } from './utils/UserContext';
 
 const Forms = () => {
   const [show, setShow] = useState(true);
-  
-  const[_,dispatch] = useAuthContext();
+
+  const [_, dispatch] = useAuthContext();
 
   const login = () => {
-      dispatch({
-          type: "login"
-      });
+    dispatch({
+      type: "login"
+    });
   }
 
   return (
+
+    // <Form>
+    //   <Form.Group controlId="formGroupEmail">
+    //     <Form.Label>Email address</Form.Label>
+    //     <Form.Control type="email" placeholder="Enter email" />
+    //   </Form.Group>
+    //   <Form.Group controlId="formGroupPassword">
+    //     <Form.Label>Password</Form.Label>
+    //     <Form.Control type="password" placeholder="Password" />
+    //   </Form.Group>
+    // </Form>
+  //   <Row xs={1} md={2}>
+  //   <Col>1 of 3</Col>
+  //   <Col>2 of 3</Col>
+  //   <Col>3 of 3</Col>
+  // </Row>
+
     <Form>
       <Form.Row>
         <Col>
@@ -24,10 +41,9 @@ const Forms = () => {
         <Col>
           <Form.Control placeholder="Last name" />
         </Col>
-       
+
       </Form.Row>
-      
-      <br></br>
+
       <Form.Row>
         <Form.Group as={Col} controlId="formGridEmail">
           <Form.Label>Email</Form.Label>
@@ -39,12 +55,12 @@ const Forms = () => {
           <Form.Control type="password" placeholder="Password" />
         </Form.Group>
       </Form.Row>
-
+      <Form.Row>
       <Form.Group controlId="formGridAddress1">
         <Form.Label>Address</Form.Label>
-        <Form.Control placeholder="" />
+        <Form.Control placeholder="Address" />
       </Form.Group>
-
+      </Form.Row>
 
 
       <Form.Row>
